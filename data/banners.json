@@ -1,0 +1,16 @@
+[
+  {
+    "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=1920&auto=format&fit=crop",
+    "title": "比肩有线的动力，<br><em>摆脱线缆的束缚。</em>",
+    "subtitle": "全天续航，专业级输出。为高强度作业现场打造的无线电动工具平台，重新定义“无绳”的边界。",
+    "btn_text": "探索系列 →",
+    "btn_link": "DRILL"
+  },
+  {
+    "image": "https://images.unsplash.com/photo-1572981779307-38b8cabb2407?q=80&w=1920&auto=format&fit=crop",
+    "title": "在最严苛的现场，<br><em>依然稳定可靠。</em>",
+    "subtitle": "每一款工具都在真实工况下被测试、被摔打、被使用到极限。这不是实验室数据，这是我们的日常。",
+    "btn_text": "查看冲击扳手 →",
+    "btn_link": "IMPACT"
+  }
+]
