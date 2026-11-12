@@ -1,0 +1,31 @@
+{
+  "DRILL": {
+    "title": "充电式电钻",
+    "desc": "专为高强度作业打造，提供更强劲的动力与更持久的续航表现。",
+    "items": [
+      { "tag": "NEW", "voltage": "21V", "series": "21V MAX* XR 系列", "name": "21V MAX XR 无刷电钻", "tagline": "旗舰级无刷电钻，提供极致的动力输出与超长续航。", "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?q=80&w=600&auto=format&fit=crop", "specs": [["最大扭矩", "85 Nm"], ["空载转速", "2,000 rpm"]], "detailedSpecs": [["额定电压", "21V MAX"], ["电机类型", "无刷电机"]] },
+      { "tag": "热销", "voltage": "21V", "series": "21V MAX 系列", "name": "21V MAX 冲击电钻", "tagline": "集钻孔与冲击功能于一体。", "image": "", "specs": [["最大扭矩", "70 Nm"], ["冲击频率", "32,000 BPM"]], "detailedSpecs": [["额定电压", "21V MAX"], ["电机类型", "有刷电机"]] }
+    ]
+  },
+  "IMPACT": {
+    "title": "充电式冲击扳手",
+    "desc": "强劲的高扭矩输出，轻松应对大型螺栓的拆装与重型汽修作业。",
+    "items": [
+      { "tag": "NEW", "voltage": "20V", "series": "20V MAX XR 系列", "name": "20V MAX XR 高扭矩冲击扳手", "tagline": "600Nm 超高扭矩，汽修重装得力助手。", "image": "", "specs": [["最大扭矩", "600 Nm"], ["驱动方头", "1/2\""]], "detailedSpecs": [["额定电压", "20V MAX"], ["电机类型", "无刷电机"]] }
+    ]
+  },
+  "CUTTER": {
+    "title": "充电式切割机",
+    "desc": "无刷电机提供持久动力，适用于金属、石材等多种材质的切割。",
+    "items": [
+      { "tag": "NEW", "voltage": "20V", "series": "20V MAX 系列", "name": "20V MAX 无刷角磨机", "tagline": "高效切割与打磨的可靠伙伴。", "image": "", "specs": [["最大功率", "800 W"], ["砂轮直径", "125 mm"]], "detailedSpecs": [["额定电压", "20V MAX"], ["电机类型", "无刷电机"]] }
+    ]
+  },
+  "BATTERY": {
+    "title": "锂电池",
+    "desc": "全系通用电池平台，智能温控与电量管理。",
+    "items": [
+      { "tag": "NEW", "voltage": "20V", "series": "20V MAX XR 系列", "name": "20V MAX XR 5.0Ah 锂电池", "tagline": "高容量锂电池，提供更长续航。", "image": "", "specs": [["电压", "20V MAX"], ["容量", "5.0 Ah"]], "detailedSpecs": [["额定电压", "20V MAX"], ["电池容量", "5.0 Ah"]] }
+    ]
+  }
+}
