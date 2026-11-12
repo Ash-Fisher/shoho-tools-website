@@ -1,14 +1,43 @@
-# .pages.yml
 media:
-  input: images          # 上传的图片会存入 images 文件夹
-  output: /images        # 在 HTML 中引用图片的路径前缀
+  input: images
+  output: /images
 
 content:
-  - name: contact_info
-    label: 联系我们信息
+  - name: banners
+    label: 首页 Banner 轮播图
     type: file
-    path: index.html     # 指定要编辑的文件
+    path: data/banners.json
+    format: json
     fields:
+      - name: items
+        label: 轮播项列表
+        type: block
+        fields:
+          - name: image
+            label: 背景图片 (建议 1920x800)
+            type: image
+          - name: title
+            label: 主标题 (支持 <br> 和 <em>)
+            type: string
+          - name: subtitle
+            label: 副标题文字
+            type: text
+          - name: btn_text
+            label: 按钮文字
+            type: string
+          - name: btn_link
+            label: 按钮跳转分类 (如 DRILL, IMPACT)
+            type: string
+
+  - name: site_info
+    label: 全站文案与公司信息
+    type: file
+    path: data/site.json
+    format: json
+    fields:
+      - name: top_bar_text
+        label: 顶部黑条文字
+        type: string
       - name: company_name
         label: 公司名称
         type: string
@@ -17,7 +46,104 @@ content:
         type: string
       - name: address
         label: 公司地址
-        type: text
+        type: string
       - name: company_image
         label: 公司大图
         type: image
+      - name: pdf_url
+        label: 产品目录PDF路径或链接
+        type: string
+      - name: catalog_title
+        label: 目录区标题
+        type: string
+      - name: catalog_desc
+        label: 目录区描述
+        type: text
+      - name: about_p1
+        label: 关于我们 第一段
+        type: text
+      - name: about_p2
+        label: 关于我们 第二段
+        type: text
+      - name: footer_desc
+        label: 页脚公司简介
+        type: text
+
+  - name: products
+    label: 产品库管理
+    type: file
+    path: data/products.json
+    format: json
+    fields:
+      - name: DRILL
+        label: 充电式电钻 类目
+        type: object
+        fields:
+          - {name: title, label: 类目名称, type: string}
+          - {name: desc, label: 类目描述, type: text}
+          - name: items
+            label: 产品列表
+            type: block
+            fields:
+              - {name: name, label: 产品名称, type: string}
+              - {name: tag, label: 标签 (NEW/热销), type: string}
+              - {name: voltage, label: 电压, type: string}
+              - {name: series, label: 系列名称, type: string}
+              - {name: tagline, label: 一句话卖点, type: string}
+              - {name: image, label: 产品主图, type: image}
+              - {name: specs, label: 规格参数 (格式:参数|数值,每行一个), type: text}
+              - {name: detailedSpecs, label: 详细参数 (格式:参数|数值,每行一个), type: text}
+      - name: IMPACT
+        label: 冲击扳手 类目
+        type: object
+        fields:
+          - {name: title, label: 类目名称, type: string}
+          - {name: desc, label: 类目描述, type: text}
+          - name: items
+            label: 产品列表
+            type: block
+            fields:
+              - {name: name, label: 产品名称, type: string}
+              - {name: tag, label: 标签, type: string}
+              - {name: voltage, label: 电压, type: string}
+              - {name: series, label: 系列名称, type: string}
+              - {name: tagline, label: 一句话卖点, type: string}
+              - {name: image, label: 产品主图, type: image}
+              - {name: specs, label: 规格参数, type: text}
+              - {name: detailedSpecs, label: 详细参数, type: text}
+      - name: CUTTER
+        label: 切割机 类目
+        type: object
+        fields:
+          - {name: title, label: 类目名称, type: string}
+          - {name: desc, label: 类目描述, type: text}
+          - name: items
+            label: 产品列表
+            type: block
+            fields:
+              - {name: name, label: 产品名称, type: string}
+              - {name: tag, label: 标签, type: string}
+              - {name: voltage, label: 电压, type: string}
+              - {name: series, label: 系列名称, type: string}
+              - {name: tagline, label: 一句话卖点, type: string}
+              - {name: image, label: 产品主图, type: image}
+              - {name: specs, label: 规格参数, type: text}
+              - {name: detailedSpecs, label: 详细参数, type: text}
+      - name: BATTERY
+        label: 电池 类目
+        type: object
+        fields:
+          - {name: title, label: 类目名称, type: string}
+          - {name: desc, label: 类目描述, type: text}
+          - name: items
+            label: 产品列表
+            type: block
+            fields:
+              - {name: name, label: 产品名称, type: string}
+              - {name: tag, label: 标签, type: string}
+              - {name: voltage, label: 电压, type: string}
+              - {name: series, label: 系列名称, type: string}
+              - {name: tagline, label: 一句话卖点, type: string}
+              - {name: image, label: 产品主图, type: image}
+              - {name: specs, label: 规格参数, type: text}
+              - {name: detailedSpecs, label: 详细参数, type: text}
