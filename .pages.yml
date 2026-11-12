@@ -1,1 +1,23 @@
+# .pages.yml
+media:
+  input: images          # 上传的图片会存入 images 文件夹
+  output: /images        # 在 HTML 中引用图片的路径前缀
 
+content:
+  - name: contact_info
+    label: 联系我们信息
+    type: file
+    path: index.html     # 指定要编辑的文件
+    fields:
+      - name: company_name
+        label: 公司名称
+        type: string
+      - name: phone
+        label: 服务电话
+        type: string
+      - name: address
+        label: 公司地址
+        type: text
+      - name: company_image
+        label: 公司大图
+        type: image
